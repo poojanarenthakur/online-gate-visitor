@@ -1,0 +1,38 @@
+<!--Header Section Starts Here-->
+<header class="bg-nav">
+    <div>
+        <marquee><b class="text-white" style="    font-size: -webkit-xxx-large;
+    font-family: ui-serif;
+    margin-left: 40px;">Visitor Gate Pass Syestm</b></marquee>
+    </div>
+    <div class=" flex justify-end " style="font-size:larger;">
+        <!-- <div class="p-1 mx-3 inline-flex items-center ">
+            <div class="p-1 flex flex-row items-center "> -->
+        <a class="text-white p-2 no-underline hidden md:block lg:block ">Home</a>
+        <a class="text-white p-2 no-underline hidden md:block lg:block ">Features</a>
+        <a class="text-white p-2 no-underline hidden md:block lg:block ">About Us</a>
+        <a class="text-white p-2 no-underline hidden md:block lg:block ">Contact Us</a>
+        <a (click)="profileToggle()" class="text-white p-2 no-underline hidden md:block lg:block ">Login</a>
+        <div id="ProfileDropDown " [ngStyle]="{ 'display': dropdown ? 'block' : 'none' } " class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r ">
+            <ul class="list-reset ">
+                <li [routerLink]="['owner']">
+                    <a (click)="profileToggle()" class="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-black dark:hover:bg-gray-200/80 dark:hover:text-slate-700
+        lg:transition-colors lg:duration-300">Owner Login</a>
+                </li>
+                <li [routerLink]="['admin']">
+                    <a (click)="profileToggle()" class="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-black dark:hover:bg-gray-200/80 dark:hover:text-slate-700
+        lg:transition-colors lg:duration-300">Admin Login</a>
+                </li>
+                <li [routerLink]="['guard']">
+                    <a (click)="profileToggle()" class="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-black dark:hover:bg-gray-200/80 dark:hover:text-slate-700
+        lg:transition-colors lg:duration-300 " href="javascript:; ">Guard Login</a>
+                </li>
+                <li [routerLink]="['employee']">
+                    <a (click)="profileToggle()" class="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-black dark:hover:bg-gray-200/80 dark:hover:text-slate-700
+        lg:transition-colors lg:duration-300 " href="javascript:; ">Employee Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
